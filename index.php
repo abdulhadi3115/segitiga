@@ -75,6 +75,7 @@
 								$alas   = $_POST['alas'];
 								$tinggi = $_POST['tinggi'];
 								$luas_segitiga = 1/2 * $alas * $tinggi; // Mengitung luas segitiga
+
 								$tanggal_hari_ini = date('Y-m-d',time());
 								$sql = "INSERT INTO segitiga (id,alas, tinggi, luas,created_date)
 								VALUES (null,'$alas', '$tinggi', '$luas_segitiga','$tanggal_hari_ini')";
